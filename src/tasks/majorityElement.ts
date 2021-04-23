@@ -13,6 +13,14 @@
  * @returns The majority element
  */
 function majorityElement(nums: number[]): number {
+  const invalidInputMessage = "Input must contain a majority element";
+
+  if (nums.length === 1) return nums[0];
+  if (nums.length === 2) {
+    if (nums[0] !== nums[1]) throw invalidInputMessage;
+    return nums[0];
+  }
+
   let majorityElement: number | undefined;
   const map: { [key: string]: number } = {};
   const halfLength = Math.floor(nums.length / 2);
@@ -30,11 +38,9 @@ function majorityElement(nums: number[]): number {
     }
   }
 
-  if (majorityElement === undefined) {
-    throw "Input must contain a majority element";
-  }
+  if (majorityElement === undefined) throw invalidInputMessage;
 
   return majorityElement;
 }
 
-console.log(majorityElement([3, 2, 3]));
+console.log(majorityElement([3]));
