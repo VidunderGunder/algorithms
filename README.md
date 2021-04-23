@@ -1,4 +1,3 @@
-# Node + TypeScript
+# Algorithms
 
-Fast and close-to-production way to develop with Node and TypeScript.
-Inspired by Ben Awad.
+Just me practicing some algorithms and programming basics with TypeScript.
