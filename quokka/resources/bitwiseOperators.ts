@@ -45,11 +45,13 @@ console.log(permission & read ? true : false);
 // HELPERS
 // ----------------
 
-function n2b(n: number) {
+console.log(true ^ false);
+
+function n2b(n: number): string {
   return (n >>> 0).toString(2);
 }
 
-function b2n(b: string) {
+function b2n(b: string): number {
   return parseInt(b, 2);
 }
 
