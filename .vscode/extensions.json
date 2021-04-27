@@ -2,6 +2,7 @@
   "recommendations": [
     "sketchbuch.vsc-quokka-statusbar",
     "wallabyjs.quokka-vscode",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "chrmarti.regex"
   ]
 }
